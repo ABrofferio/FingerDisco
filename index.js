@@ -1,11 +1,11 @@
 let theBody = document.getElementsByTagName("body")[0];
 let colors = ["red", "orange", "yellow", "green", "blue", "purple"];
-let audio = document.getElementsByTagName(audio)[0];
-let sounds = audio.children;
 
 theBody.addEventListener('keydown',(function(){
     theBody.style.backgroundColor = colors[0];
-    sounds[0].play();
+    let audio = document.getElementsByTagName("audio")[0];
+    audio.loop=true;
+    audio.play();
     let theColor = colors.shift();
     colors.push(theColor);
 }));
