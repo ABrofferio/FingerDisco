@@ -8,8 +8,31 @@
         <meta name="viewport" content="width=device-width, initial-scale=1">
     </head>
     <body>
+        <button>Mute</button>
+        <p>Press any keys to get the disco started!</p>
+        <img src="discoball.png"/>
+        <style>
+            p{
+            text-align: center;
+            visibility: visible;
+            }
+            
+            img{
+            height:350px;
+            width:350px;
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+            }
+            
+            img:hover{
+            cursor: default;
+            transform: rotate(360deg);
+            transition: all 0.7s ease-in-out 0s;
+            }
+        </style>
         <audio>
-            <source src="sounds/solo-4-bars.wav" type="audio/wav">
+            <source src="solo-4-bars.wav" type="audio/wav">
         </audio>
         <script src="https://code.jquery.com/jquery-1.12.0.min.js"></script>
         <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.12.0.min.js"><\/script>')</script>
